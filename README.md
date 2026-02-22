@@ -12,7 +12,7 @@ Built for guitarists who want a compact, headphone-friendly setup with physical 
 **This project is not affiliated with or endorsed by Neural DSP.**
 
 <p align="center">
-  <img src="images/fourbrain.JPG" width="600" alt="FourBrain MIDI Control Surface">
+  <img src="images/fourbrain.jpg" width="600" alt="FourBrain MIDI Control Surface">
 </p>
 <p align="center">
   <em>Forget Quad Cortex. Behold… FourBrain.
@@ -33,8 +33,8 @@ A **Lenovo Legion Go** (mounted in a custom 3D-printed dock) runs the software, 
 Power Delivery allows the entire system to be powered and charged from a single cable. It can also run directly from the computer’s battery without external power.
 
 <p align="center">
-  <img src="images/soundcard.JPG" width="45%">
-  <img src="images/setup.JPG" width="45%">
+  <img src="images/soundcard.jpg" width="45%">
+  <img src="images/setup.jpg" width="45%">
 </p>
 <p align="center">
   <em>No pedalboard. No multiple power supplies. No cable mess.</em>
@@ -48,10 +48,13 @@ Power Delivery allows the entire system to be powered and charged from a single 
 Most MIDI foot controllers only **send** MIDI.  
 They don’t receive feedback.
 
-Result:
-- LEDs go out of sync  
-- Knobs don’t reflect real values  
-- Preset changes break everything  
+For example: 
+- You configure a footswitch to toggle distortion. 
+- LED on = distortion on, LED off = distortion off.
+
+If you toggle the effect from your computer instead, the controller doesn’t know. The LED becomes out of sync. The same issue applies to knob values and preset changes. And what happens when you change presets? Nothing updates on the controller. All feedback becomes meaningless.
+ From what I understood (and I may be wrong), even advanced MIDI controllers like the MIDI Pirate don’t provide true parameter feedback.
+
 
 FourBrain behaves like a **true control surface** with bi-directional communication:
 
@@ -71,8 +74,8 @@ FourBrain behaves like a **true control surface** with bi-directional communicat
 - Custom Ableton Remote Script  
 
 <p align="center">
-  <img src="images/control1.JPG" width="45%">
-  <img src="images/control2.JPG" width="45%">
+  <img src="images/control1.jpg" width="45%">
+  <img src="images/control2.jpg" width="45%">
 </p>
 <p align="center">
   <em>Main effects screen | Amp parameter screen</em>
@@ -105,6 +108,7 @@ FourBrain behaves like a **true control surface** with bi-directional communicat
 # Hardware
 
 Chosen for fast development rather than cost optimization.
+An Arduino GIGA may be overkill for this project, but it allowed fast tests with an integrated touchscreen and lvgl lib support.
 
 Main components:
 
@@ -117,15 +121,18 @@ Encoders are daisy-chained over I2C (D20/SDA, D21/SCL).
 The display is a direct shield for the GIGA.
 
 <p align="center">
-  <img src="images/inside1.JPG" width="45%">
-  <img src="images/inside2.JPG" width="45%">
+  <img src="images/inside1.jpg" width="45%">
+  <img src="images/inside2.jpg" width="45%">
 </p>
+
+**TODO: Wiring diagram**
 
 ## Touchscreen Situation
 
 The project originally supported full touchscreen control.  
-It worked — until I broke it.
+It worked, until I broke it...
 
+In the end, I realized everything I actually need can be handled perfectly with physical buttons and encoders. The touchscreen is no longer essential.
 The LCD remains functional, but the touch layer is no longer required.  
 Most touchscreen features still exist in the code, but some are incomplete or unstable.
 
@@ -161,6 +168,11 @@ The controller now works fully without touch input.
 
 Ableton requires plugin parameters to be exposed (~60 parameters).
 
+To simplify the process, a default configuration file is provided. It already externalizes all required parameters and matches the plugin’s default preset layout.
+If you are starting from a clean Ableton project and have not modified the default preset, simply use the provided file.
+
+If the plugin has already been used in a project, parameters have been previously externalized, or the default preset has been modified, you will need to externalize the parameters manually to ensure proper mapping.
+
 ### Recommended (Default File)
 
 If using a clean project:
@@ -174,12 +186,26 @@ If using a clean project:
 
 ### Manual Method
 
-1. Insert plugin (VST2)  
+1. Insert the plugin (VST2) on an audio track  
 2. Click **Configure**  
-3. Click each parameter to expose it  
-4. Save the configuration  
+3. Click each parameter you want to expose (order is not important)
 
-(Not included: EQ, Multivoicer, mic placement)
+To save time, externalize:
+
+- All knobs from the three amps  
+- All pedal switches  
+- Input gain  
+- Output gain  
+- Doubler  
+
+Do NOT externalize:
+
+- Multivoicer  
+- EQ  
+- Mic placement page  
+
+4. Save the configuration for later
+5. Right-click the plugin header bar → **Lock to Control Surface**
 
 ---
 
@@ -187,24 +213,35 @@ If using a clean project:
 
 Preset arrows cannot be exposed in Ableton.
 
+As a workaround, standard MIDI mapping is used for preset navigation (no feedback is required for this function).
+
 1. Create a MIDI track (Channel 3)  
 2. Route it to the plugin  
-3. Enable MIDI Learn  
+3. Open the plugin and right click → Enable MIDI Learn  
 4. Assign switches  
 
-No feedback for preset arrows.
+## Plugin Window Toggle 
+
+A dedicated switch can toggle the plugin window. 
+
+1. Enable MIDI Learn in Ableton 
+2. Assign the switch to the plugin window toggle button
 
 ---
 
 # Customization
 
-- Config file can be adapted to other plugins  
-- UI colors are editable  
-- Layout can be modified  
+The code is not perfectly abstracted, and supporting new plugins may require structural adjustments. 
+However: 
+- The configuration file can be adapted to other plugins 
+- UI colors are customizable 
+- UI layout can be modified
 
-Supporting more than 8 visible controllers would require UI redesign.
+ Extending beyond 8 visible controllers simultaneously would require deeper UI redesign.
 
+ TODO: explain the configuration files
 ---
+
 
 # Contributing
 
