@@ -1,0 +1,1 @@
+from .FourBrain import FourBraindef create_instance(c_instance):    return FourBrain(c_instance)

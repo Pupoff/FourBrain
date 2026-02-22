@@ -1,0 +1,360 @@
+{
+    "id": "application/vnd.ableton.plugin-configuration",
+    "version": "1.0",
+    "device-id": "device:vst:audiofx:1314146392?n=Archetype%20Tim%20Henson%20X",
+    "mpe-enabled": false,
+    "mpe-settings": {
+        "zone-type": 0,
+        "first-note-channel": 1,
+        "last-note-channel": 15
+    },
+    "groups": [
+        {
+            "name": "Default",
+            "parameters": [
+                {
+                    "name": "Pink Amp Gain",
+                    "id": 37,
+                    "x-slot": 0,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Pink Amp Bass",
+                    "id": 38,
+                    "x-slot": 0,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Pink Amp Middle",
+                    "id": 39,
+                    "x-slot": 0,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Pink Amp Treble",
+                    "id": 40,
+                    "x-slot": 0,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Pink Amp Presence",
+                    "id": 41,
+                    "x-slot": 1,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Pink Amp Master",
+                    "id": 42,
+                    "x-slot": 1,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Pink Amp Output",
+                    "id": 43,
+                    "x-slot": 1,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Amp Type",
+                    "id": 22,
+                    "x-slot": 1,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Cherubs Amp Output",
+                    "id": 36,
+                    "x-slot": 2,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Cherubs Amp Presence",
+                    "id": 35,
+                    "x-slot": 2,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Cherubs Amp Treble",
+                    "id": 34,
+                    "x-slot": 2,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Cherubs Amp Middle",
+                    "id": 33,
+                    "x-slot": 2,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Cherubs Amp Bass",
+                    "id": 32,
+                    "x-slot": 3,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Cherubs Amp Gain",
+                    "id": 30,
+                    "x-slot": 3,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Cherubs Amp Channel",
+                    "id": 31,
+                    "x-slot": 3,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Roses Amp Gain",
+                    "id": 23,
+                    "x-slot": 3,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Roses Amp Bass",
+                    "id": 24,
+                    "x-slot": 4,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Roses Amp Middle",
+                    "id": 25,
+                    "x-slot": 4,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Roses Amp Treble",
+                    "id": 26,
+                    "x-slot": 4,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Roses Amp Presence",
+                    "id": 27,
+                    "x-slot": 4,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Roses Amp Blend",
+                    "id": 28,
+                    "x-slot": 5,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Roses Amp Output",
+                    "id": 29,
+                    "x-slot": 5,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Active Amp Section",
+                    "id": 21,
+                    "x-slot": 5,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Boost Active",
+                    "id": 12,
+                    "x-slot": 5,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Boost Gain",
+                    "id": 8,
+                    "x-slot": 6,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Boost Level",
+                    "id": 9,
+                    "x-slot": 6,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Boost Bass",
+                    "id": 10,
+                    "x-slot": 6,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Boost Treble",
+                    "id": 11,
+                    "x-slot": 6,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Compressor Active",
+                    "id": 16,
+                    "x-slot": 7,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Compressor Compression",
+                    "id": 13,
+                    "x-slot": 7,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Compressor Level",
+                    "id": 14,
+                    "x-slot": 7,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Compressor Attack",
+                    "id": 15,
+                    "x-slot": 7,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Overdrive Active",
+                    "id": 20,
+                    "x-slot": 8,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Overdrive Drive",
+                    "id": 17,
+                    "x-slot": 8,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Overdrive Level",
+                    "id": 18,
+                    "x-slot": 8,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Overdrive Tone",
+                    "id": 19,
+                    "x-slot": 8,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Chorus Active",
+                    "id": 146,
+                    "x-slot": 9,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Chorus Mix",
+                    "id": 147,
+                    "x-slot": 9,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Reverb Active",
+                    "id": 160,
+                    "x-slot": 9,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Reverb Mix",
+                    "id": 161,
+                    "x-slot": 9,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Reverb Decay",
+                    "id": 162,
+                    "x-slot": 10,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Reverb Low Cut",
+                    "id": 164,
+                    "x-slot": 10,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Reverb High Cut",
+                    "id": 165,
+                    "x-slot": 10,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Reverb Shimmer",
+                    "id": 163,
+                    "x-slot": 10,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Delay Active",
+                    "id": 148,
+                    "x-slot": 11,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Delay Mix",
+                    "id": 149,
+                    "x-slot": 11,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Delay Feedback",
+                    "id": 153,
+                    "x-slot": 11,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Delay Low Cut",
+                    "id": 154,
+                    "x-slot": 11,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Delay Note",
+                    "id": 155,
+                    "x-slot": 12,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Delay Amount",
+                    "id": 157,
+                    "x-slot": 12,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Delay High Cut",
+                    "id": 158,
+                    "x-slot": 12,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Delay Sync",
+                    "id": 150,
+                    "x-slot": 12,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Delay Mode",
+                    "id": 151,
+                    "x-slot": 13,
+                    "y-slot": 0
+                },
+                {
+                    "name": "Delay Type",
+                    "id": 152,
+                    "x-slot": 13,
+                    "y-slot": 1
+                },
+                {
+                    "name": "Doubler Active",
+                    "id": 5,
+                    "x-slot": 13,
+                    "y-slot": 2
+                },
+                {
+                    "name": "Output Gain",
+                    "id": 1,
+                    "x-slot": 13,
+                    "y-slot": 3
+                },
+                {
+                    "name": "Input Gain",
+                    "id": 0,
+                    "x-slot": 14,
+                    "y-slot": 0
+                }
+            ]
+        }
+    ]
+}
