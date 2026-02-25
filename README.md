@@ -3,7 +3,6 @@
 
 ![Arduino](https://img.shields.io/badge/Arduino-Compatible-blue)  
 ![MIDI](https://img.shields.io/badge/MIDI-USB-green)  
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 An open-source Arduino-based MIDI control surface for **Neural DSP Archetype** plugins with full bi-directional feedback.
 
